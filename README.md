@@ -1,10 +1,10 @@
-bip39 utils
+# bip39 utils
 
 Packing 24-wordlists into blocks, based on the bip39 english.txt wordlist.
 in this example we create a wordlist, then pack it into 4 blocks
 and extract them later back to the 24-wordlist.
 
-how to use:
+How to use:
 
 Source of the bip39 wordlist:
 https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt

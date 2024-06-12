@@ -1,30 +1,31 @@
-from bip39_utils import load_bip39_wordlist, decode_unique_number, base_convert_back, extract_sequence_and_number, load_packed_numbers
+import bip39_utils
 
 def main():
-    bip39_wordlist_path = 'english.txt'
-    packed_numbers_path = '24wp.txt'
-    block_size = 6  # Change this to 1, 2, 4, 6, or 8 as needed
-    shift_amount = 72  # Must match the shift amount used in packing
+    # Load the BIP-39 word list
+    word_list = bip39_utils.load_word_list()
+    reverse_word_list = {index: word for index, word in enumerate(word_list)}
 
-    bip39_wordlist = load_bip39_wordlist(bip39_wordlist_path)
-    packed_numbers = load_packed_numbers(packed_numbers_path)
-    
-    reverse_bip39_dict = {index + 1: word for index, word in enumerate(bip39_wordlist)}
-    
+    # Read the packed numbers
+    with open('24wp.txt', 'r') as file:
+        encoded_numbers = [line.strip() for line in file.readlines() if line.strip()]
+
+    # Decode each block
     decoded_blocks = []
-    for encoded_number in packed_numbers:
-        combined_number = base_convert_back(encoded_number)
-        sequence, unique_number = extract_sequence_and_number(combined_number, shift_amount)
-        decoded_positions = decode_unique_number(unique_number, block_size)
-        decoded_words = [reverse_bip39_dict.get(pos, "unknown") for pos in decoded_positions]
-        decoded_blocks.append((sequence, decoded_words))
-        print(f"Encoded Number: {encoded_number} -> Combined Number: {combined_number} -> Sequence: {sequence} -> Unique Number: {unique_number} -> Positions: {decoded_positions} -> Block: {decoded_words}")
+    for encoded_number in encoded_numbers:
+        combined_number = bip39_utils.decode_number(encoded_number)
+        sequence, unique_number = bip39_utils.extract_sequence_from_combined_number(combined_number)
+        positions = bip39_utils.number_to_positions(unique_number, base=2048, length=4)
+        block = [reverse_word_list[pos] for pos in positions if pos in reverse_word_list]
+        decoded_blocks.append((sequence, block))
+        print(f"Encoded Number: {encoded_number} -> Combined Number: {combined_number} -> Sequence: {sequence} -> Unique Number: {unique_number} -> Positions: {positions} -> Block: {block}")
 
-    # Sort the blocks based on the sequence number
+    # Sort blocks by sequence
     decoded_blocks.sort(key=lambda x: x[0])
-    
-    for sequence, words in decoded_blocks:
-        print(f"Sequence: {sequence} -> Block: {words}")
+
+    # Combine the blocks into a single word list
+    decoded_words = [word for _, block in decoded_blocks for word in block if word != 'unknown']
+    print("\nDecoded 24-word mnemonic:")
+    print(" ".join(decoded_words))
 
 if __name__ == "__main__":
     main()

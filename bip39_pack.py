@@ -1,34 +1,46 @@
-from bip39_utils import load_bip39_wordlist, load_recovery_words, generate_unique_number, base_convert, combine_sequence_and_number, save_packed_numbers
+import bip39_utils
+import os
 
 def main():
-    bip39_wordlist_path = 'english.txt'
-    recovery_words_path = '24w.txt'
-    packed_numbers_path = '24wp.txt'
-    block_size = 6  # Change this to 1, 2, 4, 6, or 8 as needed
-    shift_amount = 72  # Increased to accommodate larger values for block size 8
+    # Load the BIP-39 word list
+    word_list = bip39_utils.load_word_list()
 
-    bip39_wordlist = load_bip39_wordlist(bip39_wordlist_path)
-    recovery_words = load_recovery_words(recovery_words_path)
-    
-    bip39_dict = {word: index + 1 for index, word in enumerate(bip39_wordlist)}
-    
-    # Verify that the number of recovery words is a multiple of block_size
-    if len(recovery_words) % block_size != 0:
-        print(f"Error: The recovery phrase must contain a multiple of {block_size} words.")
-        return
+    # Check if the mnemonic file exists, if not, create a new mnemonic
+    if not os.path.exists('24w.txt'):
+        # Create a 24-word mnemonic
+        mnemonic = bip39_utils.create_mnemonic(word_list, words_count=24)
+        bip39_utils.save_mnemonic_to_file(mnemonic, '24w.txt')
 
-    packed_numbers = []
-    for i in range(0, len(recovery_words), block_size):
-        block = recovery_words[i:i+block_size]
-        positions = [bip39_dict[word] for word in block]
-        unique_number = generate_unique_number(positions, block_size)
-        combined_number = combine_sequence_and_number(i // block_size + 1, unique_number, shift_amount)
-        encoded_number = base_convert(combined_number)
-        packed_numbers.append(encoded_number)
-        print(f"Block: {block} -> Positions: {positions} -> Unique Number: {unique_number} -> Combined Number: {combined_number} -> Encoded Number: {encoded_number}")
+    # Read the 24-word mnemonic
+    words = bip39_utils.load_mnemonic_from_file('24w.txt')
+
+    # Ensure we only have 24 words
+    assert len(words) == 24, "The mnemonic should contain exactly 24 words."
+
+    # Get positions of words in the BIP-39 word list
+    positions = [word_list.index(word) for word in words]
+
+    # Pack words into blocks and encode
+    block_size = 6
+    encoded_numbers = []
     
-    save_packed_numbers(packed_numbers_path, packed_numbers)
-    print(f"Packed numbers saved to {packed_numbers_path}")
+    for i in range(0, len(positions), block_size):
+        block_positions = positions[i:i + block_size]
+        # Pad the block_positions with zeros if necessary
+        while len(block_positions) < block_size:
+            block_positions.append(0)
+        unique_number = bip39_utils.positions_to_number(block_positions, base=2048)
+        combined_number = bip39_utils.combine_number_with_sequence(unique_number, i // block_size + 1)
+        encoded_number = bip39_utils.encode_number(combined_number)
+        encoded_numbers.append(encoded_number)
+        print(f"Block: {block_positions} -> Unique Number: {unique_number} -> Combined Number: {combined_number} -> Encoded Number: {encoded_number}")
+
+    # Save encoded numbers to file
+    with open('24wp.txt', 'w') as file:
+        for encoded_number in encoded_numbers:
+            file.write(encoded_number + '\n')
+
+    print("Packed numbers saved to 24wp.txt")
 
 if __name__ == "__main__":
     main()
