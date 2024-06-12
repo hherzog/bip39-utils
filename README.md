@@ -1,7 +1,7 @@
 # bip39 utils</br>
 
 Packing 24-wordlists into blocks, based on the bip39 english.txt wordlist.</br>
-in this example we create a wordlist, then pack it into 4 blocks</br>
+In this example we create a wordlist, then pack it into 4 blocks</br>
 and extract them later back to the 24-wordlist.</br>
 
 How to use:</br>
@@ -62,7 +62,7 @@ Encoded Number: tqhbl9wfx0gdy6 -> Combined Number: 5072347979403669651102 -> Seq
 Encoded Number: 6xyt29mlao5q6v -> Combined Number: 1184438350047753298903 -> Sequence: 3 -> Unique Number: 11844383500477532989 -> Positions: [328, 1531, 517, 101, 1729, 829] -> Block: ['cinnamon', 'satoshi', 'doll', 'arrow', 'subway', 'guilt']</br>
 Encoded Number: 565ujnd5128c78 -> Combined Number: 882108717754620798404 -> Sequence: 4 -> Unique Number: 8821087177546207984 -> Positions: [244, 1708, 1542, 1305, 1186, 752] -> Block: ['burden', 'stereo', 'school', 'permit', 'nephew', 'fun']</br>
 
-Decoded 24-word mnemonic:
+Decoded 24-word mnemonic:</br>
 pet rate galaxy ring claw cereal quiz swing acoustic guilt argue retire cinnamon satoshi doll arrow subway guilt burden stereo school permit nephew fun</br>
 
 Original 24-word mnemonic from 24w.txt:</br>
@@ -73,4 +73,4 @@ Success: The decoded mnemonic matches the original mnemonic.</br>
 
 
 use at your own risk!</br>
-higly experimental!</br>
+highly experimental!</br>
