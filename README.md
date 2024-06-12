@@ -68,13 +68,3 @@ Sequence: 4 -> Block: ['click', 'flee', 'resist', 'hill', 'retire', 'alone']
 
 use at your own risk!
 higly experimental!
-
-
-
-If you find it useuful, you can send me a donation.
-
-bc1qh675hepfw8ah2hkaa3xmlmjepm4xgzc4f6wdcg
-
-Thank you
-
-Holger Herzog
