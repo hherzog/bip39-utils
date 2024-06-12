@@ -24,8 +24,23 @@ def main():
 
     # Combine the blocks into a single word list
     decoded_words = [word for _, block in decoded_blocks for word in block if word != 'unknown']
+    decoded_mnemonic = " ".join(decoded_words)
+
     print("\nDecoded 24-word mnemonic:")
-    print(" ".join(decoded_words))
+    print(decoded_mnemonic)
+
+    # Load the original mnemonic from the file for comparison
+    original_words = bip39_utils.load_mnemonic_from_file('24w.txt')
+    original_mnemonic = " ".join(original_words)
+
+    print("\nOriginal 24-word mnemonic from 24w.txt:")
+    print(original_mnemonic)
+
+    # Check if the decoded mnemonic matches the original mnemonic
+    if decoded_mnemonic == original_mnemonic:
+        print("\nSuccess: The decoded mnemonic matches the original mnemonic.")
+    else:
+        print("\nError: The decoded mnemonic does not match the original mnemonic.")
 
 if __name__ == "__main__":
     main()
