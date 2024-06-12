@@ -13,14 +13,14 @@ https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt</br>
 wget https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt</br>
 
 
-bip39_unique-wordlist.py</br>
+python3 bip39_unique-wordlist.py</br>
 create 24w.txt</br>
 {</br>
 Mnemonic saved to 24w.txt:</br>
 pet rate galaxy ring claw cereal quiz swing acoustic guilt argue retire cinnamon satoshi doll arrow subway guilt burden stereo school permit nephew fun</br>
 }</br>
 
-bip39_check.py</br>
+python3 bip39_check.py</br>
 checks if all words are in the bip39 word list and shows their position</br>
 {</br>
 24w.txt Position: 1, BIP-39 Number: 1308</br>
@@ -34,7 +34,7 @@ checks if all words are in the bip39 word list and shows their position</br>
 }</br>
 
 
-bip39_pack.py</br>
+python3 bip39_pack.py</br>
 create 24wp.txt</br>
 {</br>
 Block: [1307, 1425, 759, 1488, 336, 300] -> Unique Number: 47114713094901367084 -> Combined Number: 4711471309490136708401 -> Encoded Number: rmbjt2wqa3j0oh</br>
@@ -54,7 +54,7 @@ tqhbl9wfx0gdy6</br>
 the order of the 4 blocks can be mixed(they have the order coded in the block)</br>
 
 
-bip39_unpack.py</br>
+python3 bip39_unpack.py</br>
 displays wordlist</br>
 {</br>
 Encoded Number: rmbjt2wqa3j0oh -> Combined Number: 4711471309490136708401 -> Sequence: 1 -> Unique Number: 47114713094901367084 -> Positions: [1307, 1425, 759, 1488, 336, 300] -> Block: ['pet', 'rate', 'galaxy', 'ring', 'claw', 'cereal']</br>
