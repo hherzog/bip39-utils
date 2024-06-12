@@ -1,70 +1,71 @@
-# bip39 utils
+# bip39 utils</br>
 
-Packing 24-wordlists into blocks, based on the bip39 english.txt wordlist.
-in this example we create a wordlist, then pack it into 4 blocks
-and extract them later back to the 24-wordlist.
+Packing 24-wordlists into blocks, based on the bip39 english.txt wordlist.</br>
+in this example we create a wordlist, then pack it into 4 blocks</br>
+and extract them later back to the 24-wordlist.</br>
 
-How to use:
+How to use:</br>
 
-Source of the bip39 wordlist:
-https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt
-https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt
+Source of the bip39 wordlist:</br>
+https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt</br>
+https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt</br>
 
-wget https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt
+wget https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt</br>
 
 
-bip39_unique-wordlist.py
-create 24w.txt
+bip39_unique-wordlist.py</br>
+create 24w.txt</br>
+{</br>
+Mnemonic saved to 24w.txt:</br>
+pet rate galaxy ring claw cereal quiz swing acoustic guilt argue retire cinnamon satoshi doll arrow subway guilt burden stereo school permit nephew fun</br>
+}</br>
 
-{
-Mnemonic saved to 24w.txt:
-isolate shield eagle music raise swim vital neither wolf mixed muffin empower room agree bomb alert twenty uncle click flee resist hill retire alone
+bip39_check.py</br>
+checks if all words are in the bip39 word list and shows their position</br>
+{</br>
+24w.txt Position: 1, BIP-39 Number: 1308</br>
+24w.txt Position: 2, BIP-39 Number: 1426</br>
+24w.txt Position: 3, BIP-39 Number: 760</br>
+...</br>
+24w.txt Position: 21, BIP-39 Number: 1543</br>
+24w.txt Position: 22, BIP-39 Number: 1306</br>
+24w.txt Position: 23, BIP-39 Number: 1187</br>
+24w.txt Position: 24, BIP-39 Number: 753</br>
+}</br>
+
+
+bip39_pack.py</br>
+create 24wp.txt</br>
+{</br>
+Block: [1307, 1425, 759, 1488, 336, 300] -> Unique Number: 47114713094901367084 -> Combined Number: 4711471309490136708401 -> Encoded Number: rmbjt2wqa3j0oh</br>
+Block: [1407, 1760, 16, 829, 92, 1471] -> Unique Number: 50723479794036696511 -> Combined Number: 5072347979403669651102 -> Encoded Number: tqhbl9wfx0gdy6</br>
+Block: [328, 1531, 517, 101, 1729, 829] -> Unique Number: 11844383500477532989 -> Combined Number: 1184438350047753298903 -> Encoded Number: 6xyt29mlao5q6v</br>
+Block: [244, 1708, 1542, 1305, 1186, 752] -> Unique Number: 8821087177546207984 -> Combined Number: 882108717754620798404 -> Encoded Number: 565ujnd5128c78</br>
+Packed numbers saved to 24wp.txt</br>
+}</br>
+
+cat 24wp.txt</br>
+
+rmbjt2wqa3j0oh</br>
+tqhbl9wfx0gdy6</br>
+6xyt29mlao5q6v</br>
+565ujnd5128c78</br>
+
+the order of the 4 blocks can be mixed(they have the order coded in the block)</br>
+
+
+bip39_unpack.py</br>
+displays wordlist</br>
+{</br>
+Encoded Number: rmbjt2wqa3j0oh -> Combined Number: 4711471309490136708401 -> Sequence: 1 -> Unique Number: 47114713094901367084 -> Positions: [1307, 1425, 759, 1488, 336, 300] -> Block: ['pet', 'rate', 'galaxy', 'ring', 'claw', 'cereal']</br>
+Encoded Number: tqhbl9wfx0gdy6 -> Combined Number: 5072347979403669651102 -> Sequence: 2 -> Unique Number: 50723479794036696511 -> Positions: [1407, 1760, 16, 829, 92, 1471] -> Block: ['quiz', 'swing', 'acoustic', 'guilt', 'argue', 'retire']</br>
+Encoded Number: 6xyt29mlao5q6v -> Combined Number: 1184438350047753298903 -> Sequence: 3 -> Unique Number: 11844383500477532989 -> Positions: [328, 1531, 517, 101, 1729, 829] -> Block: ['cinnamon', 'satoshi', 'doll', 'arrow', 'subway', 'guilt']</br>
+Encoded Number: 565ujnd5128c78 -> Combined Number: 882108717754620798404 -> Sequence: 4 -> Unique Number: 8821087177546207984 -> Positions: [244, 1708, 1542, 1305, 1186, 752] -> Block: ['burden', 'stereo', 'school', 'permit', 'nephew', 'fun']</br>
+
+Decoded 24-word mnemonic:</br>
+pet rate galaxy ring claw cereal quiz swing acoustic guilt argue retire cinnamon satoshi doll arrow subway guilt burden stereo school permit nephew fun</br>
 }
 
-bip39_check.py
-checks if all words are in the bip39 word list and shows their position
-{
-24w.txt Position: 1, BIP-39 Number: 949
-24w.txt Position: 2, BIP-39 Number: 1582
-24w.txt Position: 3, BIP-39 Number: 553
-...
-24w.txt Position: 22, BIP-39 Number: 862
-24w.txt Position: 23, BIP-39 Number: 1472
-24w.txt Position: 24, BIP-39 Number: 56
-}
 
-bip39_pack.py
-create 24wp.txt
-{
-Block: ['isolate', 'shield', 'eagle', 'music', 'raise', 'swim'] -> Positions: [949, 1582, 553, 1168, 1418, 1760] -> Unique Number: 34219163964454754016 -> Combined Number: 4756585646834099967712 -> Encoded Number: rvub2wsmvb8ov4
-Block: ['vital', 'neither', 'wolf', 'mixed', 'muffin', 'empower'] -> Positions: [1961, 1186, 2023, 1138, 1162, 585] -> Unique Number: 70673352669050196553 -> Combined Number: 9515406318408340623945 -> Encoded Number: 1js5lgrqkttjbk9
-Block: ['room', 'agree', 'bomb', 'alert', 'twenty', 'uncle'] -> Positions: [1504, 41, 202, 50, 1882, 1893] -> Unique Number: 54188033731529987941 -> Combined Number: 14221287482340465629029 -> Encoded Number: 2bdaob1fih215d1
-Block: ['click', 'flee', 'resist', 'hill', 'retire', 'alone'] -> Positions: [342, 711, 1468, 862, 1472, 56] -> Unique Number: 12334369238405742648 -> Combined Number: 18901800300716986597432 -> Encoded Number: 32t30mf55z846yg
-Packed numbers saved to 24wp.txt
-}
-cat 24wp.txt
-
-rvub2wsmvb8ov4
-1js5lgrqkttjbk9
-2bdaob1fih215d1
-32t30mf55z846yg
-
-the order of the 4 blocks can be mixed(they have the order coded in the block)
-
-
-bip39_unpack.py
-displays wordlist
-{
-Encoded Number: rvub2wsmvb8ov4 -> Combined Number: 4756585646834099967712 -> Sequence: 1 -> Unique Number: 34219163964454754016 -> Positions: [949, 1582, 553, 1168, 1418, 1760] -> Block: ['isolate', 'shield', 'eagle', 'music', 'raise', 'swim']
-Encoded Number: 1js5lgrqkttjbk9 -> Combined Number: 9515406318408340623945 -> Sequence: 2 -> Unique Number: 70673352669050196553 -> Positions: [1961, 1186, 2023, 1138, 1162, 585] -> Block: ['vital', 'neither', 'wolf', 'mixed', 'muffin', 'empower']
-Encoded Number: 2bdaob1fih215d1 -> Combined Number: 14221287482340465629029 -> Sequence: 3 -> Unique Number: 54188033731529987941 -> Positions: [1504, 41, 202, 50, 1882, 1893] -> Block: ['room', 'agree', 'bomb', 'alert', 'twenty', 'uncle']
-Encoded Number: 32t30mf55z846yg -> Combined Number: 18901800300716986597432 -> Sequence: 4 -> Unique Number: 12334369238405742648 -> Positions: [342, 711, 1468, 862, 1472, 56] -> Block: ['click', 'flee', 'resist', 'hill', 'retire', 'alone']
-Sequence: 1 -> Block: ['isolate', 'shield', 'eagle', 'music', 'raise', 'swim']
-Sequence: 2 -> Block: ['vital', 'neither', 'wolf', 'mixed', 'muffin', 'empower']
-Sequence: 3 -> Block: ['room', 'agree', 'bomb', 'alert', 'twenty', 'uncle']
-Sequence: 4 -> Block: ['click', 'flee', 'resist', 'hill', 'retire', 'alone']
-}
-
-
-use at your own risk!
-higly experimental!
+use at your own risk!</br>
+higly experimental!</br>
