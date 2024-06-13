@@ -86,7 +86,7 @@ generate qrcodes from the blocks in 24wp.txt and one combined qrcode</br>
 
 python3 bip39_qrcode_crypt.py helloworld</br>
 generate encrypted qr-codes and text with passphrase</br>
-{
+{</br>
 Combined QR code generated as combined_qr.png</br>
 Combined encrypted block: xOqLAWSRnyzk-2PT_8UBYZkM7cYG4i5cHJQTj95J-hWr26qy1Jvugs-k-6oanoPupFVDMX8pyd-adkzIDLj4y_aq82w857V8pe0Y2nJFwJHprPTjJXd01XXgO3QRjOta</br>
 QR code for block 1 generated as block_1_qr.png</br>
@@ -97,21 +97,21 @@ QR code for block 3 generated as block_3_qr.png</br>
 Encrypted block 3: sjcSUqbtvYrbfTkdTDWxjGEeDM4t68UlBx0P6TYT5hgajeggk3rlcMVHNRWo21Hu</br>
 QR code for block 4 generated as block_4_qr.png</br>
 Encrypted block 4: Atk4BAiwMMxDAs_AoZckYe80d2E1WuFZqBqHW64KmTqUGJhePW7s4ah0dTmR2QK_</br>
-}
+}</br>
 
-python3 bip39_decrypt.py "xOqLAWSRnyzk-2PT_8UBYZkM7cYG4i5cHJQTj95J-hWr26qy1Jvugs-k-6oanoPupFVDMX8pyd-adkzIDLj4y_aq82w857V8pe0Y2nJFwJHprPTjJXd01XXgO3QRjOta" "helloworld"
-decrypt the qr-code or text with the passphrase
-{
-Decrypted data: rmbjt2wqa3j0oh tqhbl9wfx0gdy6 6xyt29mlao5q6v 565ujnd5128c78
+python3 bip39_decrypt.py "xOqLAWSRnyzk-2PT_8UBYZkM7cYG4i5cHJQTj95J-hWr26qy1Jvugs-k-6oanoPupFVDMX8pyd-adkzIDLj4y_aq82w857V8pe0Y2nJFwJHprPTjJXd01XXgO3QRjOta" "helloworld"</br>
+decrypt the qr-code or text with the passphrase</br>
+{</br>
+Decrypted data: rmbjt2wqa3j0oh tqhbl9wfx0gdy6 6xyt29mlao5q6v 565ujnd5128c78</br>
 
-Decoded 24-word mnemonic:
-pet rate galaxy ring claw cereal quiz swing acoustic guilt argue retire cinnamon satoshi doll arrow subway guilt burden stereo school permit nephew fun
+Decoded 24-word mnemonic:</br>
+pet rate galaxy ring claw cereal quiz swing acoustic guilt argue retire cinnamon satoshi doll arrow subway guilt burden stereo school permit nephew fun</br>
 
-Original 24-word mnemonic from 24w.txt:
-pet rate galaxy ring claw cereal quiz swing acoustic guilt argue retire cinnamon satoshi doll arrow subway guilt burden stereo school permit nephew fun
+Original 24-word mnemonic from 24w.txt:</br>
+pet rate galaxy ring claw cereal quiz swing acoustic guilt argue retire cinnamon satoshi doll arrow subway guilt burden stereo school permit nephew fun</br>
 
-Success: The decoded mnemonic matches the original mnemonic.
-}
+Success: The decoded mnemonic matches the original mnemonic.</br>
+}</br>
 
 
 just for the sake of completeness, but not a good idea, even though everything here in terms of scripts is possibly not a good idea:)</br>
