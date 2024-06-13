@@ -8,7 +8,8 @@ def main():
     # Check if the mnemonic file exists, if not, create a new mnemonic
     if not os.path.exists('24w.txt'):
         # Create a 24-word mnemonic
-        mnemonic = bip39_utils.create_mnemonic(word_list, words_count=24)
+        entropy = bip39_utils.generate_entropy()
+        mnemonic = bip39_utils.entropy_to_mnemonic(entropy, word_list)
         bip39_utils.save_mnemonic_to_file(mnemonic, '24w.txt')
 
     # Read the 24-word mnemonic
@@ -21,7 +22,7 @@ def main():
     positions = [word_list.index(word) for word in words]
 
     # Pack words into blocks and encode
-    block_size = 6
+    block_size = 4  # Adjusted to 4 to ensure the number of blocks is consistent with earlier examples
     encoded_numbers = []
     
     for i in range(0, len(positions), block_size):

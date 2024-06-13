@@ -72,5 +72,12 @@ Success: The decoded mnemonic matches the original mnemonic.</br>
 }
 
 
+python3 bip39_test.py 100</br>
+Progress: |██████████████████████████████████████████████████| 100.0% Complete</br>
+
+Success: All tests passed.</br>
+
+test the algo for packing and unpacking
+
 use at your own risk!</br>
 highly experimental!</br>
