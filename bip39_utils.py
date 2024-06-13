@@ -14,9 +14,9 @@ def create_mnemonic(word_list, words_count=24):
     mnemonic = [word_list[int(chunk, 2)] for chunk in chunks]
     return ' '.join(mnemonic)
 
-def save_mnemonic_to_file(mnemonic, file_path='24w.txt'):
-    with open(file_path, 'w') as file:
-        file.write('\n'.join([f"{i+1} {word}" for i, word in enumerate(mnemonic.split())]))
+#def save_mnemonic_to_file(mnemonic, file_path='24w.txt'):
+#    with open(file_path, 'w') as file:
+#        file.write('\n'.join([f"{i+1} {word}" for i, word in enumerate(mnemonic.split())]))
 
 def load_mnemonic_from_file(file_path='24w.txt'):
     with open(file_path, 'r') as file:
