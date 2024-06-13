@@ -80,10 +80,10 @@ Success: All tests passed.</br>
 test the algo for packing and unpacking
 
 
-python3 bip39_qrcode.py
-generate qrcodes from the blocks in 24wp.txt and one combined qrcode
+python3 bip39_qrcode.py</br>
+generate qrcodes from the blocks in 24wp.txt and one combined qrcode</br>
 
-just for the sake of completeness, but not a good idea, even though everything here in terms of scripts is possibly not a good idea:)
+just for the sake of completeness, but not a good idea, even though everything here in terms of scripts is possibly not a good idea:)</br>
 
 
 use at your own risk!</br>
