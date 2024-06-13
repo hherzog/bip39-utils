@@ -83,7 +83,7 @@ test the algo for packing and unpacking
 python3 bip39_qrcode.py</br>
 generate qrcodes from the blocks in 24wp.txt and one combined qrcode</br>
 
-Usage: bip39_qrcode_crypt.py <passphrase> <mode (GCM/CFB)>
+Usage: bip39_qrcode_crypt.py "passphrase" {mode (GCM/CFB)}</br>
 python3 bip39_qrcode_crypt.py helloworld GCM</br>
 {</br>
 Combined QR code generated as combined_qr.png</br>
@@ -98,7 +98,7 @@ QR code for block 4 generated as block_4_qr.png</br>
 Encrypted block 4: R0NNOihgwCjneJMge80PXf8-Xo05u8bU6LOqhlHvvOiUSU2l8ttxGmoYgxnvf1PVG1NZjO2QbalxwLVtQVQ=</br>
 }</br>
 
-Usage: bip39_decrypt.py <encrypted_data> <passphrase></br>
+Usage: bip39_decrypt.py "encrypted_data" "passphrase"</br>
 python3 bip39_decrypt.py "R0NNOh01yEEq9WBa8gzqYdLQz9M7_6oW0ugey-VlXCeopX3pMKav41FXwM2mdBBZBx-4Wj-qUllmpkAmSpfNqSB2iujYxG88r3WlzSl5WgBPZw8pqwlcpDLL5_Za6Y-NeH7UUJY0kU6Fwus=" "helloworld"
 {</br>
 Decrypted data: rmbjt2wqa3j0oh tqhbl9wfx0gdy6 6xyt29mlao5q6v 565ujnd5128c78</br>
