@@ -14,6 +14,7 @@ wget https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt<
 </br>
 </br>
 create 24w.txt</br>
+Warning! This will overwrite an existing 24w.txt - use it only for generating and testing the scripts</br>
 python3 bip39_unique-wordlist.py</br>
 {</br>
 Mnemonic saved to 24w.txt:</br>
@@ -98,13 +99,13 @@ Block: [1475, 1960, 801, 124, 1776, 1335] -> Unique Number: 53176963168680248631
 Block: [408, 1972, 1300, 1052, 1124, 195] -> Unique Number: 14734452145946566851 -> Combined Number: 1473445214594656685104 -> Encoded Number: 8myjnkvjyuv774</br>
 </br>
 Encrypted Blocks:</br>
-Encrypted block 1: R0NNOmdpuscLVTKBOLu2j1if-Utw8f5mbSsSEWluw0NpKwyEVK5yO-_egoGlSqVwpHYhgaxpnzOFx5h07xU=</br>
-Encrypted block 2: R0NNOienuJneBq1KWLlHl-HUefm-iMV0ug-LwhsqmEUun4eSQ5KkIVoeJAWZOiWu9V9BXX6bjWijY6cU1fM=</br>
-Encrypted block 3: R0NNOj_jexUumTT2RomdssLL0wgrPckbWv0PjN9AtJtIhbzg2ZJw_AYgTNjKHU7vfsP_WIfYq83Hq1a7hFU=</br>
-Encrypted block 4: R0NNOvlsgfbNii5GlhKJDjK62fK0iQpXq4hUXpwCEwZ3ugTjBUDpjwsIPGX5wcGirPzqw42cS8rtG-sjlPI=</br>
+Encrypted block 1: R0NNOvoKoG-LFwg6OwQFHEE2tSkLcCyGBnl4NbaTg8WwuhXM54NYigdD4c7_aL-jGTLTqQ09GtrTKbqjHLI=</br>
+Encrypted block 2: R0NNOsLgYsW8VlEAX1gum_Y9NmNHpuHRYeIqa8IYd5Vuxph1Aw8CDfeniHlz4k6DD4aC66xu2Go83eErt9o=</br>
+Encrypted block 3: R0NNOiH0qSXvUonQwtwGSA0hRpIsWsd6ZS20yovyiEou16Dlvoq2qRzXCYMZLFp-TuYeRUaQsVQBD_GDMJE=</br>
+Encrypted block 4: R0NNOvT0GWdNhPOgW7vcJVa1ejb34P6mwXS2KkvpViNVAlk842bH1tp9gKxyuIEzmwLWRtBikTyTT-bFGwE=</br>
 </br>
 Combined Encrypted Block:</br>
-R0NNOgSVb_leGB7yNiffUNQ0JANgQXMpOhpjgy2b34RxSCg822YpmzmrMCpdt1_rLrEJg1BIBwGIi3wVVqq9o7YJflq8TO7F9BM9VUHa9P-liuHcO7tO-yrFhpsyKc-h0qbimNMEW6p4-KE=</br>
+R0NNOgXtFtgqfxWAe1kySHOSQo-aP1Pkcy7L1EXnIZrlH3EsXx2lSW9-GcezZOSuMvlsWLnrBiGkWctegbCuFdDg7pqHFGapAJy_b-Lmxy_87KwK2jhiZBBEDuBga6wcrZqOvsFJ6E0Ofvc=</br>
 }</br>
 </br>
 # decrypt</br>
@@ -158,17 +159,17 @@ Block: [1475, 1960, 801, 124, 1776, 1335] -> Unique Number: 53176963168680248631
 Block: [408, 1972, 1300, 1052, 1124, 195] -> Unique Number: 14734452145946566851 -> Combined Number: 1473445214594656685104 -> Encoded Number: 8myjnkvjyuv774</br>
 </br>
 Encrypted Blocks:</br>
-Encrypted block 1: R0NNOuwbX-X0shVwsI6fpC9MLGxxAZNdL3GbM82p0qP3LydNlXeiepKwPF1zM0vBBZ08bsGHEXvoIEd-fss=</br>
+Encrypted block 1: R0NNOnKvbRVQw1g1Kr6eC9QzQFRKUDm09ZUZMWOnE6vBgoI7WOmw2BAi1cV12JSc7w8Fkgo1LUBd5yEwUMM=</br>
 QR code for block 1 generated as block_1_qr.png</br>
-Encrypted block 2: R0NNOrdSgo_l53N0hgEP3rm-fEkVsbC_RdWUnmf2xKO3viugvr_-KMbXidx4jy8v0GQ0WJhEaqwzlYSnzyg=</br>
+Encrypted block 2: R0NNOguBWHL1sJ42F2Qjo2dUOvW05RJUC4v7uguryRse-6Jq5lSeWwS9tiQos-_H16Qq55mRr0mNiND7B5I=</br>
 QR code for block 2 generated as block_2_qr.png</br>
-Encrypted block 3: R0NNOoZegjYlxBr48sWIc7TG83rgInCqSHXyeG1xwbmPRREV0gjBd73X-YpjFlvshqIhQj5476njWz5m9JQ=</br>
+Encrypted block 3: R0NNOv84mthtR7ZHpP5tqiEUW1OXi7UDNxIcRsAMFDNliQWzZ9nAOiDB_auBTVQeGX9ZsCbL5TKS-ka5EP0=</br>
 QR code for block 3 generated as block_3_qr.png</br>
-Encrypted block 4: R0NNOixVOJz0DzZhTXdTM_dUPqhoKPLXcKVKHP-FaJ4JYF4bWM99sLHChyWW4zb7lNlN7qDP9RUFxpB2GHU=</br>
+Encrypted block 4: R0NNOg0Xrt0PqSncF2yyPdHc8kqqXydE4Lqnx88OQOTRIEa2ulu-djD7ENkevmmL9reICJijsD3jpEO-oO0=</br>
 QR code for block 4 generated as block_4_qr.png</br>
 </br>
 Combined Encrypted Block:</br>
-R0NNOojmfQlPYtheCySCSPc_Yfz6UYoVlbGzxUCyVUTAC8XsTiEtcxiU_F36rdkIQBZf2SNcGqk7Yi3srLBYKoJaLX_jBrVlIjNP6P3YYQc92S_-7UDH6HuXUaO1N2ULXWfkgDb-6Aom5Zw=</br>
+R0NNOt7WpfFQecEL8JrMYM55s9V8aam14Fm_QDJmokC67R8We0M9T-G60okApEhp0kAvD47aWajkaPqLCYEiEUuy6uCwHTh-nN_gRMUA7NvIdU9kuDNMFc1rRqVOyd0nCxlqUwZCWC6o4xE=</br>
 Combined QR code generated as combined_qr.png</br>
 }</br>
 </br>
