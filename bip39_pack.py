@@ -22,7 +22,7 @@ def main():
     positions = [word_list.index(word) for word in words]
 
     # Pack words into blocks and encode
-    block_size = 4  # Adjusted to 4 to ensure the number of blocks is consistent with earlier examples
+    block_size = 6  # Adjusted to 4 to ensure the number of blocks is consistent with earlier examples
     encoded_numbers = []
     
     for i in range(0, len(positions), block_size):

@@ -12,7 +12,7 @@ def print_progress_bar(iteration, total, prefix='', suffix='', decimals=1, lengt
 
 def test_pack_unpack(iterations):
     word_list = bip39_utils.load_word_list()
-    block_size = 4
+    block_size = 6
 
     for i in range(1, iterations + 1):
         entropy = bip39_utils.generate_entropy()
