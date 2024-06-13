@@ -83,24 +83,23 @@ test the algo for packing and unpacking
 python3 bip39_qrcode.py</br>
 generate qrcodes from the blocks in 24wp.txt and one combined qrcode</br>
 
-
-python3 bip39_qrcode_crypt.py helloworld</br>
-generate encrypted qr-codes and text with passphrase</br>
+Usage: bip39_qrcode_crypt.py <passphrase> <mode (GCM/CFB)>
+python3 bip39_qrcode_crypt.py helloworld GCM</br>
 {</br>
 Combined QR code generated as combined_qr.png</br>
-Combined encrypted block: xOqLAWSRnyzk-2PT_8UBYZkM7cYG4i5cHJQTj95J-hWr26qy1Jvugs-k-6oanoPupFVDMX8pyd-adkzIDLj4y_aq82w857V8pe0Y2nJFwJHprPTjJXd01XXgO3QRjOta</br>
+Combined encrypted block: R0NNOh01yEEq9WBa8gzqYdLQz9M7_6oW0ugey-VlXCeopX3pMKav41FXwM2mdBBZBx-4Wj-qUllmpkAmSpfNqSB2iujYxG88r3WlzSl5WgBPZw8pqwlcpDLL5_Za6Y-NeH7UUJY0kU6Fwus=</br>
 QR code for block 1 generated as block_1_qr.png</br>
-Encrypted block 1: WHh41EnQ4F6_LAkNoAgtnuwB0nG9xOtM0joHMpsvfqX65wolCIB9hAxS-DTPXZrc</br>
+Encrypted block 1: R0NNOml6Q_3tVxLDU2uF6YiUkV_QwfqtM_BILF_i93f9DF0yxpUfneYvVN8EdsewHOfjJba-zznxu76e0NI=</br>
 QR code for block 2 generated as block_2_qr.png</br>
-Encrypted block 2: aeGj_7pUoxhHziQAMk4YZ2HlUzjKX7rcg9JxFfzLmTyBPnJrFMnUlxSS8ZvyENV8</br>
+Encrypted block 2: R0NNOvDgsqr9cphMhVhZc2Qj9s4pvfVqvyF2xIPnswmvzmbGTjN4FjlpwMakGfaooSgdGVez2VHz3IFVpnc=</br>
 QR code for block 3 generated as block_3_qr.png</br>
-Encrypted block 3: sjcSUqbtvYrbfTkdTDWxjGEeDM4t68UlBx0P6TYT5hgajeggk3rlcMVHNRWo21Hu</br>
+Encrypted block 3: R0NNOv3uC-wZOSH7TzA9UWo3RVGYcJDmIScWQMrouOzA7-kUBunssDwWFVbPr93UZBW0_3MwE-vZDE18PtI=</br>
 QR code for block 4 generated as block_4_qr.png</br>
-Encrypted block 4: Atk4BAiwMMxDAs_AoZckYe80d2E1WuFZqBqHW64KmTqUGJhePW7s4ah0dTmR2QK_</br>
+Encrypted block 4: R0NNOihgwCjneJMge80PXf8-Xo05u8bU6LOqhlHvvOiUSU2l8ttxGmoYgxnvf1PVG1NZjO2QbalxwLVtQVQ=</br>
 }</br>
 
-python3 bip39_decrypt.py "xOqLAWSRnyzk-2PT_8UBYZkM7cYG4i5cHJQTj95J-hWr26qy1Jvugs-k-6oanoPupFVDMX8pyd-adkzIDLj4y_aq82w857V8pe0Y2nJFwJHprPTjJXd01XXgO3QRjOta" "helloworld"</br>
-decrypt the qr-code or text with the passphrase</br>
+Usage: bip39_decrypt.py <encrypted_data> <passphrase></br>
+python3 bip39_decrypt.py "R0NNOh01yEEq9WBa8gzqYdLQz9M7_6oW0ugey-VlXCeopX3pMKav41FXwM2mdBBZBx-4Wj-qUllmpkAmSpfNqSB2iujYxG88r3WlzSl5WgBPZw8pqwlcpDLL5_Za6Y-NeH7UUJY0kU6Fwus=" "helloworld"
 {</br>
 Decrypted data: rmbjt2wqa3j0oh tqhbl9wfx0gdy6 6xyt29mlao5q6v 565ujnd5128c78</br>
 
@@ -112,7 +111,6 @@ pet rate galaxy ring claw cereal quiz swing acoustic guilt argue retire cinnamon
 
 Success: The decoded mnemonic matches the original mnemonic.</br>
 }</br>
-
 
 just for the sake of completeness, but not a good idea, even though everything here in terms of scripts is possibly not a good idea:)</br>
 

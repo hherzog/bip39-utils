@@ -1,8 +1,9 @@
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 from cryptography.hazmat.primitives import hashes
-from cryptography.hazmat.primitives import padding
 from cryptography.hazmat.backends import default_backend
+from cryptography.hazmat.primitives import padding
+from cryptography.exceptions import InvalidTag
 from base64 import urlsafe_b64decode
 import sys
 import os
@@ -20,23 +21,31 @@ def derive_key(passphrase, salt):
 
 def decrypt(encrypted_data, passphrase):
     encrypted_data = urlsafe_b64decode(encrypted_data.encode())
-    salt, iv, encrypted_data = encrypted_data[:16], encrypted_data[16:32], encrypted_data[32:]
-    key = derive_key(passphrase, salt)
-    cipher = Cipher(algorithms.AES(key), modes.CFB(iv), backend=default_backend())
-    decryptor = cipher.decryptor()
-    
-    padded_data = decryptor.update(encrypted_data) + decryptor.finalize()
-    
-    unpadder = padding.PKCS7(algorithms.AES.block_size).unpadder()
-    data = unpadder.update(padded_data) + unpadder.finalize()
-    
+    mode_prefix = encrypted_data[:4]
+    encrypted_data = encrypted_data[4:]
+    salt = encrypted_data[:16]
+    if mode_prefix == b'GCM:':
+        iv, tag, encrypted_data = encrypted_data[16:28], encrypted_data[28:44], encrypted_data[44:]
+        key = derive_key(passphrase, salt)
+        cipher = Cipher(algorithms.AES(key), modes.GCM(iv, tag), backend=default_backend())
+        decryptor = cipher.decryptor()
+        data = decryptor.update(encrypted_data) + decryptor.finalize()
+    elif mode_prefix == b'CFB:':
+        iv, encrypted_data = encrypted_data[16:32], encrypted_data[32:]
+        key = derive_key(passphrase, salt)
+        cipher = Cipher(algorithms.AES(key), modes.CFB(iv), backend=default_backend())
+        decryptor = cipher.decryptor()
+        padded_data = decryptor.update(encrypted_data) + decryptor.finalize()
+        unpadder = padding.PKCS7(algorithms.AES.block_size).unpadder()
+        data = unpadder.update(padded_data) + unpadder.finalize()
+    else:
+        raise ValueError("Unsupported encryption mode")
     return data.decode()
 
 def main(encrypted_data, passphrase):
     try:
         decrypted_data = decrypt(encrypted_data, passphrase)
-    except ValueError as e:
-        print(f"Error: {e}")
+    except (ValueError, InvalidTag) as e:
         print("Decryption failed. The passphrase might be incorrect.")
         return
     
