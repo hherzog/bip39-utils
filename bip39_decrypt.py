@@ -33,7 +33,13 @@ def decrypt(encrypted_data, passphrase):
     return data.decode()
 
 def main(encrypted_data, passphrase):
-    decrypted_data = decrypt(encrypted_data, passphrase)
+    try:
+        decrypted_data = decrypt(encrypted_data, passphrase)
+    except ValueError as e:
+        print(f"Error: {e}")
+        print("Decryption failed. The passphrase might be incorrect.")
+        return
+    
     print("Decrypted data:", decrypted_data)
 
     # Write decrypted data to 24wp.txt
