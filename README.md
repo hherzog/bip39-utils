@@ -148,13 +148,13 @@ Block: [1475, 1960, 801, 124, 1776, 1335] -> Unique Number: 53176963168680248631
 Block: [408, 1972, 1300, 1052, 1124, 195] -> Unique Number: 14734452145946566851 -> Combined Number: 1473445214594656685104 -> Encoded Number: 8myjnkvjyuv774
 
 Encrypted Blocks:
-Encrypted block 1: R0NNOgdZyfjXRpyHK-aiYbCfArMFWvvNWHQlKQXKqNHbqVr0gOm92EE2D1ERUyKk6CstTIsUsSdpSiAtPss=
-Encrypted block 2: R0NNOssLGIq7Cr1AoeIONVHdZXGf_QB035B-IYJANdyxCFB52fuipxubRLEHeSCYe6sN77uP1pvJc1AjHpQ=
-Encrypted block 3: R0NNOpzVn0ir54ReNl5gU_JA3HPwO4rXyfPQXAmXpG1Zb58UXPPBP536T-LdTUqYLYF7LGClBymqEcVfMgc=
-Encrypted block 4: R0NNOqC-RF8r0tbUIY8rmHHFIeoqpQN4pFWK2gdACC0b4AV00fVG01SnKAPqf4DElXSYws_mlANpjHrDJYw=
+Encrypted block 1: R0NNOqFFRWEiP5oiLlq_BdXnR3EX0wFvsyHiyTvt2seIliAfj4gKD1t1suLUNsFkioG5CCUrTaGVGdB3MCE=
+Encrypted block 2: R0NNOi5F2TcviCk78WHPqTyQjbftdQSA84Zsz9m96FVb8I37mRzMlMHfw-Lx59nAv6WzYedtaIyT1cNkc8w=
+Encrypted block 3: R0NNOhYYgjnYplWEPk81fnrXsLblnaQfKN_m3eVI3eyGfN35rDivqsHIcLE3xuTLWjv7W9e0tEfW8MSvcJk=
+Encrypted block 4: R0NNOl--utRjeMoZLNhktMcFW_UPtrnogj6T3vpUnZymTt6SLKDk5fviJxnyN71N3syQ4r-yChqkqG5I9fY=
 
 Combined Encrypted Block:
-R0NNOiVcXme-zXrRZoN3aZZIeaZjssXX3hgWfEDAeDtrqP2EyJ1jdZFU48DqoZFW3nKhfSSqrtscXPgrY_QlamhYYXrl0bYhjLO57x6eP2kTtgeWgWllOQHqZHfTNI4rsaI39JQQKR3-Xhk=</br>
+R0NNOm3fw_lrhT2wibCNvA37UzYoWViivfohDkWOeii7AUQq12Q_SVO554b5MvYzJ0Qf_2VPXn-upo_6SoDLaPwhUvl_3WoKX7ikUvnTQZRCqpg45zEweNVb2Dr4eKKuDT_5AoGBf47zjkM=</br>
 }</br>
 
 </br>
@@ -225,27 +225,27 @@ Block: [1475, 1960, 801, 124, 1776, 1335] -> Unique Number: 53176963168680248631
 Block: [408, 1972, 1300, 1052, 1124, 195] -> Unique Number: 14734452145946566851 -> Combined Number: 1473445214594656685104 -> Encoded Number: 8myjnkvjyuv774
 
 Encrypted Blocks:
-Encrypted block 1: R0NNOsuvPZyCh-AJOwz-XHG8HngvdojIQTH59gtGt7Itb_fkR1YO1dtvrAmcKQnkpljm1Tq6MgaibVHxBO4=
+Encrypted block 1: R0NNOlkxGmo2a569chkYXAPdb82gIr5jLcFD7V94cB9zF0wJ6BCgSC_OrVrOIhMzOTsre69F0qWWG8j2y7s=
 QR code for block 1 generated as block_1_qr.png
-Encrypted block 2: R0NNOpepVCJuJY_x2EmwbpAX8o6OcFuViQScstYuQDVNDkV3j4zPAX70u6cGpqpERisjbA_aYVvQoO7Z9Uc=
+Encrypted block 2: R0NNOkclB8by2dSkd8QRxSJIZzurzDYIRkBGhwhUwbTt13OQduiLHm1YSSxyrjRK85TQLrKMIHm_mzZDIw0=
 QR code for block 2 generated as block_2_qr.png
-Encrypted block 3: R0NNOqAY3s4YBEg-0subN7cLW2CyttNBXGZYHvx9OJGGkR8gPV_riu7GF72gDaYiQEFMNok3Ulx604y27Po=
+Encrypted block 3: R0NNOsXsmunLY0E4pSS9hG3j0l-FvE0-KkrRNOoZT4ov5wbuFkqGLTu6z39Q3winZUZOMrAWYxonx1D7Mbs=
 QR code for block 3 generated as block_3_qr.png
-Encrypted block 4: R0NNOszvwOoq7MM8HFlsHKjDRqeM3X6XQx0W4hY7f1g8BV8bKk7N54Wb2Ta2hN9-wucP25DTUefZnp6YG-0=
+Encrypted block 4: R0NNOinzEQgPtLmTiLqF0NQn5siem8MXE4584JtnVM27PMt4owx4l7Xh4wEcAuDHN56M1TKE8Oyue_dC998=
 QR code for block 4 generated as block_4_qr.png
 
 Combined Encrypted Block:
-R0NNOlnPvnOsbG3nDHanM5TLnMIPd1YiyU48nBS4iP3fBvA2H8DXNGxu3keuAsTKz5blVz2cTuLmfOrLzdRCGlgxJJ303E77vcvb2jz3n0jMEKxPFrxHvDJkUOyNsevGue6M2D4Vt8AO8VE=
+R0NNOj0plamAZOmSVARlwBiEl08hafipV3t3ktx0BiiSl8ZkGzPYbmNVhVcsKpNMU9yY9rYw6OMq8URumBkJ1emOqaYHse7dAnBWpr96PQ5htHjp0Bjm3ysPoVVX9zKzW2-Bsv9LbUu6RL8=
 Combined QR code generated as combined_qr.png</br>
 }</br>
 
 </br>
 
-<img src="block_1_qr.png" alt="block_1_qr.png" style="width:25%; display:inline-block;" /></br>
-<img src="block_2_qr.png" alt="block_2_qr.png" style="width:25%; display:inline-block;" /></br>
-<img src="block_3_qr.png" alt="block_3_qr.png" style="width:25%; display:inline-block;" /></br>
-<img src="block_4_qr.png" alt="block_4_qr.png" style="width:25%; display:inline-block;" /></br>
-<img src="combined_qr.png" alt="combined_qr.png" style="width:25%; display:inline-block;" /></br>
+<img src="block_1_qr.png" alt="block_1_qr.png" style="width:10%; display:inline-block;" /></br>
+<img src="block_2_qr.png" alt="block_2_qr.png" style="width:10%; display:inline-block;" /></br>
+<img src="block_3_qr.png" alt="block_3_qr.png" style="width:10%; display:inline-block;" /></br>
+<img src="block_4_qr.png" alt="block_4_qr.png" style="width:10%; display:inline-block;" /></br>
+<img src="combined_qr.png" alt="combined_qr.png" style="width:10%; display:inline-block;" /></br>
 
 </br>
 
