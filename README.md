@@ -98,13 +98,13 @@ Block: [1475, 1960, 801, 124, 1776, 1335] -> Unique Number: 53176963168680248631
 Block: [408, 1972, 1300, 1052, 1124, 195] -> Unique Number: 14734452145946566851 -> Combined Number: 1473445214594656685104 -> Encoded Number: 8myjnkvjyuv774
 
 Encrypted Blocks:
-Encrypted block 1: R0NNOu3zTR2ueRrALDcHTr_wrT623RT5D09Ax_WHuKbtfTDU3_A9z7wXhrNwSb03zjWOorPR6FQeGIMCL2Q=
-Encrypted block 2: R0NNOip2vKx0amqt1EtuuB5BAcs2Z8id4Pp9zZzWkedV0Y_S8_RsNl-XnL1PXsQDC5LHZSntoJcrIeWgFbk=
-Encrypted block 3: R0NNOuxFRW6-_vSNzWlSFZQg8KoCZZowANE_ET_eqdrjTEr7WPAR6c5wa4ft-Oc4YP7SwDWNoXEskEHf2pw=
-Encrypted block 4: R0NNOppy8Z4rx3ltrSejzneYjgjBWWi37Qb-I3huA5hwa7OmK19_vV4LqUZ1p0MnFf3a_M5MUV2_x1IJb3k=
+Encrypted block 1: R0NNOuC0QN8-teK_ZgiPeMrfn3iqKciJUO-6Ykg7k7jliiCAeJkUnTR7yZux6V5PYQTrAlLnT_cVziJsWKk=
+Encrypted block 2: R0NNOq7RDGMOJ41Uedj6GAuQqbIACKXb2flIoV7nJp-7RkRgjwTrVAY_-VGA_z0eD0p2GswmXavRen8zxS4=
+Encrypted block 3: R0NNOgM4QgMn1hvpTrcSYtqUFUWlM6ZlyvSNwKVBzcggZ6V7QAGcYw-D16xNSo5StckTzMBPFQ678URKIr0=
+Encrypted block 4: R0NNOp6Alm3dg-HU2S0ALWk_67Zm_8tzFl2QrmNp78AsQxsE9cJdmKFa8OgheNmisaHQxLglFAgy8wL501c=
 
 Combined Encrypted Block:
-R0NNOh8ESArxy3w6eeKXFuQnd3E042b0by8LSXttfC_ltIUfcMTIiuevFVfDbcoNncaznlw7rbD16zQn8tzVQRyde_SzZZUWeyNDQPf5_o6NZ3H0fd-cJyCd3iHYhnNk4qMYOHa7q6PDH_g=
+R0NNOgTOwUTa0n5KKX1_2d9FviFjLx2XXNp45cxt16inuGmM3715BHfsK_ZKo5kMG3FPnKTX21ToeQCL4bHuKoAK-oc6zpYcw3Z_HHJwALxSTc1BB0Y6KqZt6lmR5GKAuW9zUJaHgYu_Gik=
 }</br>
 </br>
 # decrypt</br>
@@ -158,21 +158,22 @@ Block: [1475, 1960, 801, 124, 1776, 1335] -> Unique Number: 53176963168680248631
 Block: [408, 1972, 1300, 1052, 1124, 195] -> Unique Number: 14734452145946566851 -> Combined Number: 1473445214594656685104 -> Encoded Number: 8myjnkvjyuv774
 
 Encrypted Blocks:
-Encrypted block 1: R0NNOjCYPadpl2229ykzljtp_zL8i4OJvt6ZAYnV9EUA3-eU9ThU0JDb6w1ClXpYRA6khb7Aj6dKQnMGVX4=
+Encrypted block 1: R0NNOoAlYlq8rzFahgkfz-NE3ApDzFfrIY23y1D3d2AJ1mIBGXDqGZZqnLSi-tain6CC9Kj--x460iEuErE=
 QR code for block 1 generated as block_1_qr.png
-Encrypted block 2: R0NNOtxDuAbrJAjNCnJtct1VZIH4m7au8Ancfl-6B9f-P13TlXqUYzbj5B6TOQ7aZ9zn-SI2Lacb5ja_GHs=
+Encrypted block 2: R0NNOpCWLC_OszfzDMTgiYy3jq6mSfW4lUwVXHi_exAReZA_UOeuUkPeP-InAla9nqj3Hpw1NnZ_SJpCB1w=
 QR code for block 2 generated as block_2_qr.png
-Encrypted block 3: R0NNOuVZ8AV_treQbMnhHuOIrH89tDD7SBGjw6wxaKr3cRmrvCfO8-Pra7mjlQ2WFVCiXN5X319uhnWIvV0=
+Encrypted block 3: R0NNOpyUxAQEeRWq0aUmvVmzib8AJd_bmENzRG0U8F5GU-tZBoRcOqk5WeQnkRgn66-E7AMBYnbVIilPVXs=
 QR code for block 3 generated as block_3_qr.png
-Encrypted block 4: R0NNOoI9QokIYhM4zXa5Sk3FT1JLk0a5vl3YFBaO5ps5fko_2YG6bMOpNUbUMqac5V6qaBnzd0RLCCIQzwg=
+Encrypted block 4: R0NNOqav3IFjojGMai6fbrHz1b9nxkiqcHbdAEpBel9iVXwrrxPfw7eeBrBpSASvpabwrZo5N2l7o_NT7Gk=
 QR code for block 4 generated as block_4_qr.png
 
 Combined Encrypted Block:
-R0NNOj9dWzuf90sWjSwUrcIY1zot6u99L2WzSY1Lhy-mL5Eh-O7h89g8aS4JR6ba6fCqzGtxID4R1FtYCryYZWAi78ZjPXCrrA4Dp4HNTG1EKqHHEjqKce3qybJuTZQCN6FwqwID237KJ8I=
+R0NNOnYmjgOs87DWXF7Cf_7RgnObBtve-_fyAPC5pelalvd-kj_S2FV9HFkNylcidQG9v5xltDE9W_LIKyr6uJT4TVzmAjx-xZDZ8lXfgOwHRPJDW6AA6YUhZ9YpRqD8c8CVF0ayMt3EQEg=
 Combined QR code generated as combined_qr.png
 }</br>
 </br>
-<div style="display: flex; flex-wrap: wrap;"><img src="block_1_qr.png" alt="block_1_qr.png" style="width:90px; height:90px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_2_qr.png" alt="block_2_qr.png" style="width:90px; height:90px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_3_qr.png" alt="block_3_qr.png" style="width:90px; height:90px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_4_qr.png" alt="block_4_qr.png" style="width:90px; height:90px; margin-right: 10px; margin-bottom: 10px;" /><img src="combined_qr.png" alt="combined_qr.png" style="width:106px; height:106px; margin-right: 10px; margin-bottom: 10px;" /></div>
+<div style="display: flex; flex-wrap: wrap;"><img src="block_1_qr.png" alt="block_1_qr.png" style="width:157px; height:157px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_2_qr.png" alt="block_2_qr.png" style="width:157px; height:157px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_3_qr.png" alt="block_3_qr.png" style="width:157px; height:157px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_4_qr.png" alt="block_4_qr.png" style="width:157px; height:157px; margin-right: 10px; margin-bottom: 10px;" /></div>
+<div style="display: flex; flex-wrap: wrap;"><img src="combined_qr.png" alt="combined_qr.png" style="width:185px; height:185px; margin-right: 10px; margin-bottom: 10px;" /></div>
 </br>
 just for the sake of completeness, but not a good idea, even though everything here in terms of scripts is possibly not a good idea:)</br>
 </br>
