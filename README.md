@@ -98,13 +98,13 @@ Block: [1475, 1960, 801, 124, 1776, 1335] -> Unique Number: 53176963168680248631
 Block: [408, 1972, 1300, 1052, 1124, 195] -> Unique Number: 14734452145946566851 -> Combined Number: 1473445214594656685104 -> Encoded Number: 8myjnkvjyuv774</br>
 </br>
 Encrypted Blocks:</br>
-Encrypted block 1: R0NNOnn39cv93nSeqhqUWm63sY4R4Ju6UZ9EzVA_NrBIgHsBKHIXZrxWCRIAe5Ee6BU7mzoG17c-o1jnCUU=</br>
-Encrypted block 2: R0NNOgTIjOyfj356KXlpELqIsfmBBOChh6sE7iUnilDehzONbwxzfLzP9rkgsCmu0XefdHUy2UUM2uuGBOc=</br>
-Encrypted block 3: R0NNOmRP1hWTrEKn5HeI_I3JIDohOT-38kYQT_uROr2d9mMU0wqAkEUUNl3Ka8TsMU79IB7dVXoRrPhtrhM=</br>
-Encrypted block 4: R0NNOpNzM_4FojQRIlPGqCSU2KTfTp38hcASDIRtdX50akcr2Z8ixO-X1UjRVpnAu9fA0jbzJPWSQPEceVc=</br>
+Encrypted block 1: R0NNOu2Go81bUAsN3kIZRvssd7iYfcuhQuDYly7Rd8uw5PpX7pFANkwKoGscRaIgv-aolj8VYdXf0L4iW-w=</br>
+Encrypted block 2: R0NNOo8GQOPfIiiRugWiIHEP7kFbXyBjOcMuWoGlp9GZ1CGCuycpSd9m_epaJUOmfwaP8ZJfGlsUdfmiFgo=</br>
+Encrypted block 3: R0NNOrJsc9YoVYeJK0nd7ji9Dd7ksNVhpN-C1WfZlAa0rOBqQLsoXseRYCPTwnUnimJEF0Z-IEDg2nIGTgA=</br>
+Encrypted block 4: R0NNOsbDvl05heGNNb-XcIda9J2tJ59u097yWfkeDBhjD1l63I1lyAIw6C7PYUYzBquHOYJ56wuECoKSAwM=</br>
 </br>
 Combined Encrypted Block:</br>
-R0NNOmQhSrjEzgVtZkLcs6P7s4vHJMr6b81kfLXOkgLx7pz04DC_NLiQb6pXjKRNuPfi_DuZZCTEl-jH2MPdRT6NzodnfJMDuNZuubI8PpbVCwbpFShmkCJoM2bu6tmvH_Rd59pQPf4r_5I=</br>
+R0NNOll2pklemimjIQQNYUt67FS-V-P0bF-xc4eGyQJEuNWFNHD-tP-kLerwgDhT_H-Zu21lezzGnepSUU5aQl84jpEm-cAr--tMDA8KP8RbTuhqpquLfHSVptGmRj7AcD18WU4otI6xoqY=</br>
 }</br>
 </br>
 # decrypt</br>
@@ -157,21 +157,20 @@ Block: [1475, 1960, 801, 124, 1776, 1335] -> Unique Number: 53176963168680248631
 Block: [408, 1972, 1300, 1052, 1124, 195] -> Unique Number: 14734452145946566851 -> Combined Number: 1473445214594656685104 -> Encoded Number: 8myjnkvjyuv774</br>
 </br>
 Encrypted Blocks:</br>
-Encrypted block 1: R0NNOk_XETIB0iDDjdV7XswNtxrQ_ABW0s5fHHBujl_oN1PN2KcJg72zKp2UhGB6GEccL_JSH1kRdvH8ZOg=</br>
+Encrypted block 1: R0NNOvJcMFhNkkdhNjwtMB108D-_jFfFTL8nBpp9kYMWYdQ2TXSFmtza8Xru-h_uf4OpNphw0HbOrPUOVPE=</br>
 QR code for block 1 generated as block_1_qr.png</br>
-Encrypted block 2: R0NNOr06NNibFPR-Q8DeeXsrGOg8v01WIoSguqWCFmhtw9_Jevr4437esYarfmgAZaXrhs7VSCNeN3oxf9g=</br>
+Encrypted block 2: R0NNOnHm6fwfK6dJbVg1ntwBaIAllCzgxNKaUX6klVdpQKDmISZt2u8MfuPFz8xGb3Kth9Ig73SPQSao-Fw=</br>
 QR code for block 2 generated as block_2_qr.png</br>
-Encrypted block 3: R0NNOn0OdTMCBFQ7qZhUD9cmhOw0P6dMT6zfcLJepbfia2iLfF7vS86BXh3AP4_UKmgZNDjvQx-2l3FW0p4=</br>
+Encrypted block 3: R0NNOlm83qDBJRZqYjbT3VkMZxVGXhgCF2WAk1i6Ew1yIOF_x6le6py4J8Y7PnjF2w8lwyXEgi-2FgjXZ-8=</br>
 QR code for block 3 generated as block_3_qr.png</br>
-Encrypted block 4: R0NNOkFCOGHvH-9vq8eytzi701uP0MPF-OMY86_eumX8Mtg-wRfgS_P2q0OuK8I7IxcDIVyL2zMxsaepYlg=</br>
+Encrypted block 4: R0NNOuvBnNhXq2z1s_4Vo86mF_AJooMQ0Z9QBJuSBfKsQhYpUjL7SmDZOFSFI6XFL5WCMMhgsnhmAuTN5D8=</br>
 QR code for block 4 generated as block_4_qr.png</br>
 </br>
 Combined Encrypted Block:</br>
-R0NNOoPtT0F83T13RBCDg4phG7BN_z37DMEzoHufzjxa21P2gqNJIA5qGg7MqyFQznIMuQjM9a-0T0ydF8TI9twxzAM5er7O4UIn5-6s30AiCnCxZRgh0BlD8YCw6fkcTcaztKcEVBCDWDg=</br>
+R0NNOvVsdqnY_a6oII9XU5funDIJ2SAJ4fHS8i7yuYOSKM9QeWn9fybs3Kq3v4eERv8j8KBk8sOZP1ApgO8qMFL6DNkr_o7wD8tpV7BGvEzrpIP_iXctOfaqRus6BC9pP_zuDqwVfQFg_Oc=</br>
 Combined QR code generated as combined_qr.png</br>
 }</br>
 </br>
-<div style="display: flex; flex-wrap: wrap;"><img src="block_1_qr.png" alt="block_1_qr.png"
-width="67.5px" height="67.5px" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_2_qr.png" alt="block_2_qr.png" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_3_qr.png" alt="block_3_qr.png" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_4_qr.png" alt="block_4_qr.png" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px;" /><img src="combined_qr.png" alt="combined_qr.png" style="width:79.5px; height:79.5px; margin-right: 10px; margin-bottom: 10px;" /></div></br>
+<div><img src="block_1_qr.png" alt="block_1_qr.png" width="67.5px" height="67.5px" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px; display:inline-block; vertical-align:top;" /><img src="block_2_qr.png" alt="block_2_qr.png" width="67.5px" height="67.5px" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px; display:inline-block; vertical-align:top;" /><img src="block_3_qr.png" alt="block_3_qr.png" width="67.5px" height="67.5px" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px; display:inline-block; vertical-align:top;" /><img src="block_4_qr.png" alt="block_4_qr.png" width="67.5px" height="67.5px" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px; display:inline-block; vertical-align:top;" /><img src="combined_qr.png" alt="combined_qr.png" width="79.5px" height="79.5px" style="width:79.5px; height:79.5px; margin-right: 10px; margin-bottom: 10px; display:inline-block; vertical-align:top;" /></div>
 </br>
 For completeness, but using these scripts might not be a good idea. Use at your own risk! Highly experimental!</br>
