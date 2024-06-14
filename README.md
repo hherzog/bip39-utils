@@ -8,6 +8,12 @@ Source of the bip39 wordlist:</br>
 https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt</br>
 https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt</br>
 </br>
+Prepare:</br>
+</br>
+1. Install Required Python Libraries:</br>
+pip install cryptography pillow qrcode</br>
+</br>
+2. Download the BIP39 English Wordlist:</br>
 wget https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt</br>
 </br>
 </br>
@@ -98,13 +104,13 @@ Block: [1475, 1960, 801, 124, 1776, 1335] -> Unique Number: 53176963168680248631
 Block: [408, 1972, 1300, 1052, 1124, 195] -> Unique Number: 14734452145946566851 -> Combined Number: 1473445214594656685104 -> Encoded Number: 8myjnkvjyuv774</br>
 </br>
 Encrypted Blocks:</br>
-Encrypted block 1: R0NNOhw-JtQyit57nAI2oDs6X-G-k2_RyWG5F6Gpu9hTtijNN4jGnjCLKb4HuuQ6k1yOVVKWk9ri-cMtIvA=</br>
-Encrypted block 2: R0NNOsmhozSK6sIIk0gFwKq5UqOcMXIgzsgeJxPlsYkYAVqls5Bsd-00A5eH0VJqv_3Req173rEpKquvXJ0=</br>
-Encrypted block 3: R0NNOuQrIo0RVtA18eGjynPkmAawhyZdZqy_646ZK51gCMXIImH4FUvSR8HIIHDfG2_5-JVQ7jMJJxA9F7E=</br>
-Encrypted block 4: R0NNOhTgDWxOkhLz3B_O-SOf27JQSz2akfB2lfgA3Sn7wqDOgG7qUusUYKd9s_WcpQ5lNDD_jUCAcQPdjm4=</br>
+Encrypted block 1: R0NNOiKGGN_cUphOBc9HmKLORYI07PkZ2ywvcbJ8szUoZrvvBnKMXAOcKf6UrVNry4-E61KdHR3jgMceG7U=</br>
+Encrypted block 2: R0NNOuSTLk_PXcxeqhOdNje4eq34-wYNSl_sTFv-dhZnwxLVb9GtR4tgcW8SPbaLzo5AiYT54zS97XKUIIg=</br>
+Encrypted block 3: R0NNOgtpfNXAbNQXc9xWnKIkH6rS5m_8IRd9IscJESrSySpo2T2SjKpLp5Eeif7-UK9Nq0TSpZIxU3-CeVU=</br>
+Encrypted block 4: R0NNOhpnK7vCscdDDVgBzIto70lCe9j1xog761FEBX5FaRlw7S4DlomlMX-2iEA0AknRLOGJAqY--7e0LvM=</br>
 </br>
 Combined Encrypted Block:</br>
-R0NNOp-kd2w6Vorfc_KNbRcPNH49lKGGKXAEPs41vtHZKU1eDDeGS9M308adILR4GbTn1IgNPSE_G7KIV9i8VBfaW0h_JNubNDjR7Z6428NTMxGHrV2zS8kq1VRdAoZL9jqVjV7xm-xO4M8=</br>
+R0NNOgxcpak4t1RRZnF_Qn8ahrig-2KrVY98ubD81HHGtk96kEYsoi8ZMvmlezA9lo_kh1scdrS1sZj_LbNPUxh0faxiYuUNCcY7E3tVX8AGWee6pBuPojVpyrzUaTSsiQaeU9v1fgN17AU=</br>
 }</br>
 </br>
 # decrypt</br>
@@ -157,17 +163,17 @@ Block: [1475, 1960, 801, 124, 1776, 1335] -> Unique Number: 53176963168680248631
 Block: [408, 1972, 1300, 1052, 1124, 195] -> Unique Number: 14734452145946566851 -> Combined Number: 1473445214594656685104 -> Encoded Number: 8myjnkvjyuv774</br>
 </br>
 Encrypted Blocks:</br>
-Encrypted block 1: R0NNOj62epwBdCHelFkKLJLCxh7Zg57JlKUTBemq_4M65wgwxeBeR-QLvCMhjUVBWq3y_8qbYeB6kAqxE2o=</br>
+Encrypted block 1: R0NNOr41805UKGdwgQvppvxgBrUz2d9VDXRNd66_QiZPFlpSDW8_9IOKH0Srjz0p5ixu2PwY2YmZLWyO-3Y=</br>
 QR code for block 1 generated as block_1_qr.png</br>
-Encrypted block 2: R0NNOg3TVv7eGlqOF1L6LSeFxGfaq4AtnqVv3c-EWPqH8XkilELC6QoCCj81K1dMhId0RowWgjJQ95gKJEw=</br>
+Encrypted block 2: R0NNOn4zYIIXxb3BWvUxfQcXPTUKnaTA-nx65cDc0UF733YCB8iMbCVTInqxaN1swTg9Sio9POWUSXpHf-o=</br>
 QR code for block 2 generated as block_2_qr.png</br>
-Encrypted block 3: R0NNOvpSELy7OQ9FYqQGcqo3DBAKcjDnl1qKntWF4bSK1Sd7u0dhxotUr-IcQX8wEfxrcE5oCiJO2IHIMmc=</br>
+Encrypted block 3: R0NNOsumD5uNvT1WTnQ1HGk7Vpw9vW9fVd9DN63pwC9ILciuNwXp0dqhZFpwQ8fwV657MuXYs8VOER7BW8k=</br>
 QR code for block 3 generated as block_3_qr.png</br>
-Encrypted block 4: R0NNOh6LdZVyC9Qv88Bum4g5sYqkqsUjSxlTOHA6OaTtohnqjn_YdvQtZ8nbL-QXw3zZK09ca8TwbslEJHY=</br>
+Encrypted block 4: R0NNOhIm7KLFbOnHoQw6qT2UHbjAXtrpIKRZdtMvNGkP5VsgoJG8iYdavgzAM0DXt2NC9pqImKcd083gWyc=</br>
 QR code for block 4 generated as block_4_qr.png</br>
 </br>
 Combined Encrypted Block:</br>
-R0NNOo9f1eeWneVEU5ou9Ou6H71piAS9O2fsIFIOmLSyh61pBuyeg8eLpzC86ho8K3FTJvGD9jjVbqF94v5KswS_KYwUcWDAgsJAIutbadc5rpmbQyDYbwUIs1oA3K652jXKS5z2Eepz1VU=</br>
+R0NNOgsRelsuhWKtUa5xP_ExAbpQWIqklB9vq3nVWkE-neFL6j1HMIJErNj61YzfggWXL5UObvl_JRQV2mp6Ij0GUh2i9thhGA971R83m8YO7DE_dXCWlQqvvzU7J_BI-m_3fvmy6od4dls=</br>
 Combined QR code generated as combined_qr.png</br>
 }</br>
 </br>
