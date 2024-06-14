@@ -171,6 +171,7 @@ R0NNOoPtT0F83T13RBCDg4phG7BN_z37DMEzoHufzjxa21P2gqNJIA5qGg7MqyFQznIMuQjM9a-0T0yd
 Combined QR code generated as combined_qr.png</br>
 }</br>
 </br>
-<div style="display: flex; flex-wrap: wrap;"><img src="block_1_qr.png" alt="block_1_qr.png" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_2_qr.png" alt="block_2_qr.png" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_3_qr.png" alt="block_3_qr.png" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_4_qr.png" alt="block_4_qr.png" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px;" /><img src="combined_qr.png" alt="combined_qr.png" style="width:79.5px; height:79.5px; margin-right: 10px; margin-bottom: 10px;" /></div></br>
+<div style="display: flex; flex-wrap: wrap;"><img src="block_1_qr.png" alt="block_1_qr.png"
+width="67.5px" height="67.5px" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_2_qr.png" alt="block_2_qr.png" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_3_qr.png" alt="block_3_qr.png" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px;" /><img src="block_4_qr.png" alt="block_4_qr.png" style="width:67.5px; height:67.5px; margin-right: 10px; margin-bottom: 10px;" /><img src="combined_qr.png" alt="combined_qr.png" style="width:79.5px; height:79.5px; margin-right: 10px; margin-bottom: 10px;" /></div></br>
 </br>
 For completeness, but using these scripts might not be a good idea. Use at your own risk! Highly experimental!</br>
